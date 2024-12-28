@@ -1,0 +1,57 @@
+/* General reset */
+
+/*
+body,html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+*/
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  /*background: #222222;  Light, soothing background color */
+   background-image: url(https://i.pinimg.com/736x/94/c0/2a/94c02a3927fe34412fd8357851a1f561.jpg);
+  display: flex;
+  flex-direction: column; /* Stack header, content, and footer vertically */
+}
+
+header {
+  height: 50px; /* Height of the header */
+  background: #010100; /* Subtle grassy color */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px; /* Adjust font size */
+}
+
+footer {
+  height: 25px; /* Height of the footer */
+  background: #010100; /* Subtle grassy color */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px; /* Adjust font size */
+}
+
+footer a {
+  color: white; /* White color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+main {
+  flex: 1; /* This ensures that the maze takes the remaining space */
+  display: flex;
+  align-items: center; /* Vertically center the maze */
+  justify-content: center; /* Horizontally center the maze */
+}
